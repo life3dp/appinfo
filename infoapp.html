@@ -113,11 +113,10 @@
         <li>설정: 속도계 디자인, 단위, 언어, 속도계 모드, ‘내 차량’ 정보(차종, 연료 종류, 공인 연비, 연료 단가)</li>
         <li>이 정보는 사용자의 기기에만 있으며 개발자는 볼 수 없습니다.</li>
       </ul>
-      <h4>3. 외부 연결 (전국 평균 유가)</h4>
+      <h4>3. 외부 연결</h4>
       <ul>
-        <li>앱 언어가 한국어일 때, 연료 단가를 자동으로 채우기 위해 하루 한 번 한국석유공사 오피넷(opinet.co.kr)의 공개 API에서 전국 평균 유가를 받아 옵니다. 다른 언어에서는 이 기능을 쓰지 않습니다.</li>
-        <li>이때 위치, 운행 기록, 차량 정보, 기기 식별자 등 개인정보는 보내지 않습니다. 일반적인 인터넷 연결과 마찬가지로 오피넷 서버에 IP 주소가 전달될 수 있으며, 이는 오피넷의 정책에 따릅니다.</li>
-        <li>지도 화면은 Apple 지도(MapKit)를 사용해 표시됩니다. 이 과정은 Apple의 개인정보 처리방침을 따릅니다.</li>
+        <li>스피드아이는 개발자나 외부 서버와 데이터를 주고받지 않습니다. 연료 단가는 사용자가 직접 입력하거나 기본값을 사용합니다.</li>
+        <li>지도 화면은 Apple 지도(MapKit)를 사용해 표시됩니다. 지도 표시 과정은 Apple의 개인정보 처리방침을 따릅니다.</li>
       </ul>
       <h4>4. 제3자 제공 · 광고 · 분석</h4>
       <p>개인정보를 제3자에게 제공하거나 판매하지 않습니다. 광고, 분석, 추적, 크래시 리포트용 제3자 SDK를 포함하지 않습니다.</p>
@@ -161,7 +160,7 @@
       </ul>
       <h4>3. Network connections</h4>
       <ul>
-        <li>When the app language is Korean, the app downloads the national average fuel price once a day from the public API of Korea National Oil Corporation’s Opinet (opinet.co.kr) to pre-fill the fuel price. No location, trip, vehicle, or device-identifying data is sent. As with any internet request, Opinet’s server may receive your IP address, subject to Opinet’s own policies. This feature is not used in other languages.</li>
+        <li>SpeedEye does not exchange any data with the developer or any external server. Fuel price is entered by you or uses a default value.</li>
         <li>Maps are displayed with Apple Maps (MapKit), subject to Apple’s privacy policy.</li>
       </ul>
       <h4>4. Sharing, advertising, analytics</h4>
@@ -212,7 +211,7 @@
         <li>알림은 iPhone이 직접 예약·표시하는 로컬 알림이며, 푸시 서버를 사용하지 않습니다.</li>
       </ul>
       <h4>3. 위젯</h4>
-      <p>홈 화면 위젯은 다가오는 기념일을 보여 주기 위해 같은 기기 안에서 앱과 데이터를 공유합니다(App Group). 이 데이터도 기기 밖으로 나가지 않습니다.</p>
+      <p>홈 화면 위젯을 제공하는 버전에서는, 위젯이 다가오는 기념일을 보여 주기 위해 같은 기기 안에서 앱과 데이터를 공유합니다(App Group). 이 데이터도 기기 밖으로 나가지 않습니다.</p>
       <h4>4. 제3자 제공 · 광고 · 분석</h4>
       <p>개인정보를 제3자에게 제공하거나 판매하지 않습니다. 광고, 분석, 추적, 크래시 리포트용 제3자 SDK를 포함하지 않습니다.</p>
       <h4>5. 삭제</h4>
@@ -251,7 +250,7 @@
         <li>Reminders are local notifications scheduled by your iPhone; no push server is used.</li>
       </ul>
       <h4>3. Widget</h4>
-      <p>The Home Screen widget shares data with the app on the same device (App Group) to show upcoming dates. This data never leaves the device.</p>
+      <p>In versions that include a Home Screen widget, the widget shares data with the app on the same device (App Group) to show upcoming dates. This data never leaves the device.</p>
       <h4>4. Sharing, advertising, analytics</h4>
       <p>We do not share or sell personal data. The app contains no third-party SDKs for advertising, analytics, tracking, or crash reporting.</p>
       <h4>5. Deletion</h4>
